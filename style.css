@@ -35,11 +35,14 @@ nav div p {
 }
 
 article {
-	width: 500px;
-	height: 500px;
+	margin: 20px;
+	width: 20%;
+	height: 33%;
 	background-color: black;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	float: left;
+}
+
+a {
+	text-decoration: none;
+	color: black;
 }
