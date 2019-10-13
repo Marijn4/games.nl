@@ -35,6 +35,8 @@ nav div p {
 
 nav a {
 	color: black;
+	height: 100%;
+	width: 100px;
 	text-decoration-line: none;
 }
 
