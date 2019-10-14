@@ -11,14 +11,14 @@ var w = 500,
 	score = 0,
 	scoreDist = 250,
 	highscoreDist = 180,
-	highscore;
+	highscore = 0;
 
 function setup() {
 	createCanvas(w, h);
 	p = new Player();
 	obstacles[nrO] = new Obstacle();
 	dir = obstacles[nrO].side();
-	highscore = localStorage.getItem('highscore');
+	highscore = localStorage.getItem('highscore1');
 }
 
 function draw() {
@@ -30,7 +30,7 @@ function draw() {
 	obstacles[nrO].show();
 	if (score > highscore) {
 		highscore = score;
-		localStorage.setItem('highscore', highscore);
+		localStorage.setItem('highscore1', highscore);
 	}
 	textSize(64);
 	fill(255);

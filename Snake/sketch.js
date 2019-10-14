@@ -39,7 +39,7 @@ function draw() {
   s.show();
 
 
-  fill(255, 0, 100);
+  fill(255, 0, 0);
   rect(food.x, food.y, scl, scl);
 
   
