@@ -1,5 +1,5 @@
-var w = 600,
-	h = 600,
+var w = 500,
+	h = 500,
 	p,
 	size = 25,
 	speed = 3,
