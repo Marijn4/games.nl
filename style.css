@@ -37,6 +37,7 @@ nav a {
 	color: black;
 	height: 100%;
 	width: 100px;
+	margin: 0;
 	text-decoration-line: none;
 }
 
@@ -49,7 +50,6 @@ article {
 	margin: 20px;
 	width: 20%;
 	height: 33%;
-	background-color: black;
 	float: left;
 }
 
