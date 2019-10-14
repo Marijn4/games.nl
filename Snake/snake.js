@@ -10,6 +10,7 @@ function Snake() {
     var d = dist(this.x, this.y, pos.x, pos.y);
     if (d < 1) {
       this.total++;
+      score++;
       return true;
     } else {
       return false;
@@ -31,6 +32,8 @@ function Snake() {
         this.x = width / 2 + scl / 2;
         this.y = height / 2 + scl / 2;
         this.tail = [];
+        score = 0;
+        scoreDist = 250
       }
     }
   }
