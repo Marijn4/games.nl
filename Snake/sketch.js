@@ -2,12 +2,18 @@ var s;
 var scl = 20;
 
 var food;
+var score = 0,
+    scoreDist = 250,
+    highscoreDist = 180,
+    highscore = 0;
+
 
 function setup() {
   createCanvas(500, 500);
   s = new Snake();
   frameRate(10);
   pickLocation();
+  highscore = localStorage.getItem('highscore');
 
 }
 
@@ -35,6 +41,23 @@ function draw() {
 
   fill(255, 0, 100);
   rect(food.x, food.y, scl, scl);
+
+  
+  if (score > highscore) {
+    highscore = score;
+    localStorage.setItem('highscore', highscore);
+  }
+  textSize(64);
+  fill(255);
+  if (score >= 10) {
+    scoreDist = 275;
+  }
+  if (highscore >= '10') {
+    highscoreDist = 200;
+  }
+  text('Score: ' + score, width - scoreDist, 50);
+  textSize(32);
+  text('Highscore: ' + highscore, width - highscoreDist, 80);
 }
 
 
