@@ -93,3 +93,10 @@ img {
 	height: 190px;
 	margin-top: 5px;
 }
+
+canvas {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
