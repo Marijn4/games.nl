@@ -96,6 +96,12 @@ canvas {
 	font-size: 15px;
 }
 
+
+#highscores {
+	clear: left;
+	margin-left: 10px;
+}
+
 .active {
 	background-color: #111478;
 }
