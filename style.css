@@ -111,3 +111,12 @@ canvas {
 	margin-top: 5%;
 	line-height: 20px;
 }
+
+#commenter {
+	margin-left: 10px;
+}
+
+#backb {
+	height: 30px;
+	width: 70px;
+}
