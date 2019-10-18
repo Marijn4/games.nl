@@ -76,6 +76,7 @@ article p {
 
 article a {
 	text-decoration-line: none;
+	margin-right: 10px;
 }
 
 img {
@@ -104,4 +105,9 @@ canvas {
 
 .active {
 	background-color: #111478;
+}
+
+#gl {
+	margin-top: 5%;
+	line-height: 20px;
 }
