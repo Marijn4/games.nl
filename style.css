@@ -68,16 +68,6 @@ a {
 	margin-left: 10px
 }
 
-.gameVenster {
-	width: 500px;
-	height: 500px;
-	background-color: black;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
 article p {
 	margin: 0px;
 	padding: 0px;
@@ -104,4 +94,14 @@ canvas {
 #mKno {
 	margin-top: 3px;
 	font-size: 15px;
+}
+
+
+#highscores {
+	clear: left;
+	margin-left: 10px;
+}
+
+.active {
+	background-color: #111478;
 }
