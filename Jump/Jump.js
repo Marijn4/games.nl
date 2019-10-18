@@ -1,10 +1,16 @@
+var w = 50,
+	h = 50,
+	p,
+	dt = 0.01;
+
 function setup() {
 	createCanvas(500, 500);
-	background(51);
 	rectMode(CENTER);
+	p = new Player();
 }
 
 function draw() {
-	fill(255, 0, 0);
-	rect(width / 2, height - 25, 50, 50);
+	background(51);
+	p.jump();
+	p.show();
 }
