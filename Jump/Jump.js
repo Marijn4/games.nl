@@ -1,7 +1,8 @@
 var w = 50,
 	h = 50,
 	p,
-	dt = 0.01;
+	dt = 0.01,
+	jump = false;
 
 function setup() {
 	createCanvas(500, 500);
@@ -13,4 +14,10 @@ function draw() {
 	background(51);
 	p.jump();
 	p.show();
+}
+
+function keyPressed() {
+	if (keyCode === 32) {
+		jump = true;
+	}
 }
