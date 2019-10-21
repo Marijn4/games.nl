@@ -40,9 +40,9 @@ function draw() {
 	if (highscore >= '10') {
 		highscoreDist = 200;
 	}
-	text('Score: ' + score, w - scoreDist, 50);
+	text('Score: ' + score, width - scoreDist, 50);
 	textSize(32);
-	text('Highscore: ' + highscore, w - highscoreDist, 80);
+	text('Highscore: ' + highscore, width - highscoreDist, 80);
 }
 
 function keyPressed() {

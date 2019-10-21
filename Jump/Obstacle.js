@@ -1,9 +1,9 @@
-function Obstacle() {
-	this.x = width + 100;
+function Obstacle(x) {
+	this.x = x;
 	this.y = height - 25;
 
 	this.update = function() {
-		this.x -= 3;
+		this.x -= ospeed;
 	}
 
 	this.show = function() {
