@@ -8,12 +8,15 @@ function setup() {
 	createCanvas(500, 500);
 	rectMode(CENTER);
 	p = new Player();
+	o = new Obstacle();
 }
 
 function draw() {
 	background(51);
 	p.jump();
 	p.show();
+	o.update();
+	o.show();
 }
 
 function keyPressed() {
