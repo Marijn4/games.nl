@@ -45,6 +45,10 @@ nav div:hover {
 	background-color: #8186d5;
 	cursor: pointer;
 }
+@keyframes slide {
+	from {animation-timing-function: ease-in-out; margin-top: -50px;}
+	to {animation-timing-function: ease-in-out; margin-top: 0px;}
+}
 
 article {
 	width: 20%;
@@ -64,8 +68,28 @@ a {
 	text-align: center;
 }
 
+article a {
+	text-decoration: none;
+	color: black;
+	float: left;
+	width: 225px;
+	height: 225px;
+	background-color: #c6cbef;
+	text-align: center;
+	animation-name: slide;
+	animation-duration: 1s;
+}
+
+@keyframes mPop {
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	100% {animation-fill-mode: forwards; opacity: 1;}
+}
+
 #mostPop {
-	margin-left: 10px
+	margin-left: 10px;
+	animation-name: mPop;
+	animation-duration: 2s;
 }
 
 article p {
