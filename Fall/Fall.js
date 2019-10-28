@@ -69,7 +69,7 @@ function sIn() {
 
 	if (score == 40) {
 		wCube = 200;
-		speedEn = 5;
+		speedEn = 13;
 	}
 }
 
