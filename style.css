@@ -46,8 +46,8 @@ nav div:hover {
 	cursor: pointer;
 }
 @keyframes slide {
-	from {animation-timing-function: ease-in-out; margin-top: -50px;}
-	to {animation-timing-function: ease-in-out; margin-top: 0px;}
+	from {animation-timing-function: ease-out; margin-top: -50px;}
+	to {animation-timing-function: ease-out; margin-top: 0px;}
 }
 
 article {
