@@ -75,7 +75,7 @@ function sIn() {
 
 function collcheck() {
 	if (enY <= height - hCube / 2 && enY >= height - hCube ) {
-		if ( cubeX >= mouseEnX - wCube && cubeX <= mouseEnX + wCube) {
+		if ( cubeX >= mouseEnX - wCube / 2 && cubeX <= mouseEnX + wCube / 2) {
 			score = 0;
 			enY = 25;
 			mouseEnX = 250;
