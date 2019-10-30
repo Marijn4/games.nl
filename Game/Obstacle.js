@@ -76,8 +76,8 @@ function Obstacle() {
 	}
 
 	this.new = function() {
-		ospeed += 0.05;
-		gap -= 1;
+		ospeed += 0.03;
+		gap -= 0.5;
 		score++;
 		nrO++;
 		obstacles[nrO] = new Obstacle;
