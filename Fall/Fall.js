@@ -13,6 +13,7 @@ var scoreDist = 250;
 function setup() {
 	createCanvas(500, 500);
 	rectMode(CENTER);
+	highscore = localStorage.getItem('highscore3');
 }
 
 function draw() {
