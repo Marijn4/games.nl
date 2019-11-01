@@ -2,7 +2,7 @@ var cubeX;
 var mouseEnX = 250;
 var enY = 25;
 var score = 0;
-var e;
+var e = [];
 var wCube = 50;
 var hCube = 50;
 var speedEn = 5;
@@ -13,6 +13,7 @@ var scoreDist = 250;
 function setup() {
 	createCanvas(500, 500);
 	rectMode(CENTER);
+	e[0] = new en();
 }
 
 function draw() {
@@ -20,11 +21,15 @@ function draw() {
 	fill(255, 0, 0);
 	cubeX = constrain(mouseX, wCube / 2, width- wCube / 2);
 	rect(cubeX, height - 25, wCube, hCube);
-	e = new enemy();
-	enY = enY + speedEn;
 	mousePosXEn();
 	sIn();
-	collcheck();	
+	for (var i = e.length - 1; i >= 0; i--) {
+		e[i].update();
+		e[i].show();
+		e[i].collision();
+		e[i].offscreen();
+	}
+
 	if (score > highscore) {
 		highscore = score;
 		localStorage.setItem('highscore3', highscore);
@@ -60,6 +65,7 @@ function sIn() {
 	if (score == 10) {
 		wCube = 100;
 		speedEn = 7;
+		e[1] = new en();
 	}
 
 	if (score == 20) {
@@ -70,18 +76,5 @@ function sIn() {
 	if (score == 40) {
 		wCube = 200;
 		speedEn = 13;
-	}
-}
-
-function collcheck() {
-	if (enY <= height - hCube / 2 && enY >= height - hCube ) {
-		if ( cubeX >= mouseEnX - wCube / 2 && cubeX <= mouseEnX + wCube / 2) {
-			score = 0;
-			enY = 25;
-			mouseEnX = 250;
-			wCube = 50;
-			speedEn = 5;
-			print('frick');
-		}
 	}
 }
