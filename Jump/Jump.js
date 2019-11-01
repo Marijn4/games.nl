@@ -9,7 +9,7 @@ var w = 50,
 	highscore = 0,
 	ospeed = 5;
 
-function setup() {
+function setup() { 
 	createCanvas(500, 500);
 	rectMode(CENTER);
 	p = new Player();
