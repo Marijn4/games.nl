@@ -13,7 +13,9 @@ var scoreDist = 250;
 function setup() {
 	createCanvas(500, 500);
 	rectMode(CENTER);
-	e[0] = new en();
+	e[0] = new en();	
+	highscore = localStorage.getItem('highscore3');
+	scoreDist = 250;
 }
 
 function draw() {
@@ -38,9 +40,15 @@ function draw() {
 	fill(255);
 	if (score >= 10) {
 		scoreDist = 275;
+	} 
+	if (score >= 100) {
+		scoreDist = 320;
 	}
 	if (highscore >= '10') {
 		highscoreDist = 200;
+	}
+	if (highscore >= '100') {
+		highscoreDist = 220;
 	}
 	text('Score: ' + score, width - scoreDist, 50);
 	textSize(32);
