@@ -17,7 +17,7 @@ function setup() {
 	highscore = localStorage.getItem('highscore3');
 	scoreDist = 250;
 }
-
+ 
 function draw() {
 	background(51);
 	fill(255, 0, 0);
