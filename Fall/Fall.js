@@ -26,6 +26,9 @@ function draw() {
 	mousePosXEn();
 	sIn();
 	for (var i = e.length - 1; i >= 0; i--) {
+		e[i].
+	}
+	for (var i = 0; i <= e.length; i++) {
 		e[i].update();
 		e[i].show();
 		e[i].collision();

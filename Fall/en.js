@@ -3,7 +3,7 @@ function en() {
 	this.mouseEnX = 250; 
 
 	this.update = function() {
-		this.enY += speedEn
+		this.enY += speedEn;
 	}
 
 	this.show = function() {
