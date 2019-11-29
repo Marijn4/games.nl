@@ -73,16 +73,20 @@ function sIn() {
 	if (score == 10) {
 		wCube = 100;
 		speedEn = 7;
-		e[1] = new en();
+		if (enY >= height / 2 - 25) {
+			e[1] = new en();
+		}
 	}
 
 	if (score == 20) {
 		wCube = 150;
 		speedEn = 10;
+		e[1] = new en();
 	}
 
 	if (score == 40) {
 		wCube = 200;
 		speedEn = 13;
+		e[1] = new en();
 	}
 }
