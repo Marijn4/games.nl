@@ -1,4 +1,4 @@
-window.onload = function() {
+/*window.onload = function() {
 	var name = localStorage.getItem("name", name);
 	var comment = localStorage.getItem("comment", comment);
 
@@ -16,4 +16,4 @@ function form() {
 	comment = document.getElementById("myTextarea").value;
 	localStorage.setItem("name", name);
 	localStorage.setItem("comment", comment);
-}
+}*/
