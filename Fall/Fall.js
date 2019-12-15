@@ -9,6 +9,7 @@ var speedEn = 5;
 var highscore = 0;
 var highscoreDist = 180;
 var scoreDist = 250;
+var offset;
 
 function setup() {
 	createCanvas(500, 500);
@@ -30,14 +31,17 @@ function draw() {
 		e[i].show();
 		e[i].collision();
 		e[i].offscreen();
+		e[0].newoff();
 	}
 
 	if (score > highscore) {
 		highscore = score;
 		localStorage.setItem('highscore3', highscore);
 	}
+
 	textSize(64);
 	fill(255);
+
 	if (score >= 10) {
 		scoreDist = 275;
 	} 
@@ -50,6 +54,7 @@ function draw() {
 	if (highscore >= '100') {
 		highscoreDist = 220;
 	}
+
 	text('Score: ' + score, width - scoreDist, 50);
 	textSize(32);
 	text('Highscore: ' + highscore, width - highscoreDist, 80);
@@ -73,16 +78,20 @@ function sIn() {
 	if (score == 10) {
 		wCube = 100;
 		speedEn = 7;
-		e[1] = new en();
+		if (enY >= height / 2 - 25) {
+			e[1] = new en();
+		}
 	}
 
 	if (score == 20) {
 		wCube = 150;
 		speedEn = 10;
+		e[1] = new en();
 	}
 
 	if (score == 40) {
 		wCube = 200;
 		speedEn = 13;
+		e[1] = new en();
 	}
 }

@@ -1,9 +1,15 @@
 function en() {
 	this.enY = 25; 
-	this.mouseEnX = 250; 
+	this.mouseEnX = 250;
+	this.offset; 
  
 	this.update = function() {
 		this.enY += speedEn;
+	}
+
+	this.newoff = function() {
+		offset = random(25, width - 25);
+		//print(offset);
 	}
 
 	this.show = function() {
@@ -32,19 +38,10 @@ function en() {
 	}
 
 	this.offscreen = function() {
-		if (score >= 0 && score <= 9) {
-			if (this.enY >= height - 25) {
-				this.mouseEnX = cubeX;
-				this.enY = 25;
-				score = score + 1;
-			}
-		} else if (score >= 10) {
-			if (this.enY >= height / 2 - 25) {
-				this.mouseEnX = cubeX;
-				enY = 50;
-				score = score + 1;
-			}
-
+		if (this.enY >= height - 25) {
+			this.mouseEnX = cubeX;
+			this.enY = 25;
+			score = score + 1;
 		}
 	}
 }
