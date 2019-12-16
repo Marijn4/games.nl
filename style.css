@@ -181,10 +181,14 @@ canvas {
 
 #marijn {
 	width: 50%;
+	height: 400px;
+	float: left;
 }
 
 #pieter {
 	width: 50%;
+	height: 400px;
+	float: left;
 }
 
 #marijn:hover {
