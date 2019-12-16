@@ -136,6 +136,10 @@ canvas {
 	background-color: #111478;
 }
 
+.sFont {
+	font-size: 15px;
+}
+
 #gl {
 	margin-top: 5%;
 	line-height: 20px;
@@ -173,4 +177,12 @@ canvas {
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 20px;
 	animation-name: mop;
+}
+
+#marijn {
+	width: 50%;
+}
+
+#pieter {
+	width: 50%;
 }
