@@ -149,3 +149,28 @@ canvas {
 	height: 30px;
 	width: 70px;
 }
+
+.textAr {
+	text-decoration: none;
+	color: black;
+	float: left;
+	width: 600px;
+	height: 500px;
+	padding: 10px;
+	background-color: #c6cbef;
+}
+
+.textAr:hover {
+	transform: scale(1);
+}
+
+.normalText {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 20px;
+}
+
+.normalLink {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 20px;
+	animation-name: mop;
+}
