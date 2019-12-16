@@ -136,6 +136,10 @@ canvas {
 	background-color: #111478;
 }
 
+.sFont {
+	font-size: 15px;
+}
+
 #gl {
 	margin-top: 5%;
 	line-height: 20px;
@@ -148,4 +152,12 @@ canvas {
 #backb {
 	height: 30px;
 	width: 70px;
+}
+
+#marijn {
+	width: 50%;
+}
+
+#pieter {
+	width: 50%;
 }
