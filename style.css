@@ -186,3 +186,11 @@ canvas {
 #pieter {
 	width: 50%;
 }
+
+#marijn:hover {
+	transform: scale(1);
+}
+
+#pieter:hover {
+	transform: scale(1);
+}
