@@ -1,7 +1,7 @@
 var cubeX;
 var mouseEnX = 250;
 var enY = 25;
-var score = 0;
+var score = 10;
 var e = [];
 var wCube = 50;
 var hCube = 50;
@@ -76,20 +76,15 @@ function sIn() {
 	if (score == 10) {
 		wCube = 100;
 		speedEn = 7;
-		if (enY >= height / 2 - 25) {
-			e[1] = new en();
-		}
 	}
 
 	if (score == 20) {
 		wCube = 150;
 		speedEn = 10;
-		e[1] = new en();
 	}
 
 	if (score == 40) {
 		wCube = 200;
 		speedEn = 13;
-		e[1] = new en();
 	}
 }
