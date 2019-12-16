@@ -150,3 +150,13 @@ canvas {
 	height: 30px;
 	width: 70px;
 }
+
+#pieter {
+	width: 50%;
+	float: right;
+}
+
+#marijn {
+	float: left;
+	width: 50%;
+}
