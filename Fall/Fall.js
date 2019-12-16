@@ -9,7 +9,6 @@ var speedEn = 5;
 var highscore = 0;
 var highscoreDist = 180;
 var scoreDist = 250;
-var offset;
 
 function setup() {
 	createCanvas(500, 500);
@@ -31,7 +30,6 @@ function draw() {
 		e[i].show();
 		e[i].collision();
 		e[i].offscreen();
-		e[0].newoff();
 	}
 
 	if (score > highscore) {

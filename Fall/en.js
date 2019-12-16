@@ -1,15 +1,9 @@
 function en() {
 	this.enY = 25; 
 	this.mouseEnX = 250;
-	this.offset; 
  
 	this.update = function() {
 		this.enY += speedEn;
-	}
-
-	this.newoff = function() {
-		offset = random(25, width - 25);
-		//print(offset);
 	}
 
 	this.show = function() {
