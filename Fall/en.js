@@ -1,15 +1,10 @@
 function en() {
 	this.enY = 25; 
 	this.mouseEnX = 250;
-	this.offset; 
+	this.enW = 50;
  
 	this.update = function() {
 		this.enY += speedEn;
-	}
-
-	this.newoff = function() {
-		offset = random(25, width - 25);
-		//print(offset);
 	}
 
 	this.show = function() {
@@ -18,15 +13,15 @@ function en() {
 	}
 
 	this.collision = function() {
-		if (this.enY + wCube / 2 >= height - hCube && this.enY + wCube / 2 <= height) {
-			if (this.mouseEnX + wCube / 2 >= cubeX - wCube / 2 && this.mouseEnX + wCube / 2 <= cubeX + wCube / 2) {
+		if (this.enY + this.enW / 2 >= height - hCube && this.enY + this.enW / 2 <= height) {
+			if (this.mouseEnX + this.enW / 2 >= cubeX - wCube / 2 && this.mouseEnX + this.enW / 2 <= cubeX + wCube / 2) {
 				score = 0;
 				this.enY = 25;
 				this.mouseEnX = 250;
 				wCube = 50;
 				speedEn = 5;
 				print('frick');
-			} else if (this.mouseEnX - wCube / 2 <= cubeX + wCube / 2 && this.mouseEnX - wCube / 2 >= cubeX - wCube / 2) {
+			} else if (this.mouseEnX - this.enW / 2 <= cubeX + wCube / 2 && this.mouseEnX - this.enW / 2 >= cubeX - wCube / 2) {
 				score = 0;
 				this.enY = 25;
 				this.mouseEnX = 250;

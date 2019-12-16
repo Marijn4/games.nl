@@ -1,7 +1,7 @@
 var cubeX;
 var mouseEnX = 250;
 var enY = 25;
-var score = 0;
+var score = 10;
 var e = [];
 var wCube = 50;
 var hCube = 50;
@@ -9,7 +9,6 @@ var speedEn = 5;
 var highscore = 0;
 var highscoreDist = 180;
 var scoreDist = 250;
-var offset;
 
 function setup() {
 	createCanvas(500, 500);
@@ -31,7 +30,6 @@ function draw() {
 		e[i].show();
 		e[i].collision();
 		e[i].offscreen();
-		e[0].newoff();
 	}
 
 	if (score > highscore) {
@@ -78,20 +76,15 @@ function sIn() {
 	if (score == 10) {
 		wCube = 100;
 		speedEn = 7;
-		if (enY >= height / 2 - 25) {
-			e[1] = new en();
-		}
 	}
 
 	if (score == 20) {
 		wCube = 150;
 		speedEn = 10;
-		e[1] = new en();
 	}
 
 	if (score == 40) {
 		wCube = 200;
 		speedEn = 13;
-		e[1] = new en();
 	}
 }
