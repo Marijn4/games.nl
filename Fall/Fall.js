@@ -1,7 +1,7 @@
 var cubeX;
 var mouseEnX = 250;
 var enY = 25;
-var score = 10;
+var score = 0;
 var e = [];
 var wCube = 50;
 var hCube = 50;
